@@ -31,7 +31,7 @@ app.post('/triangle', (req, res) => {
     const { base } = req.body;
     const area = 0.5 * height * base;
     res.send(
-        `<h1 style="margin-top:50px; text-align:center;">Area of Triangle: ${area}<br><a href="/">Go to home</a></h1>`
+        `<h1 style="margin-top:50px; text-align:center; font-family: arial;">Area of Triangle: ${area}<br><br><br><a style="text-decoration:none; background: #f7941d; color: #ffffff; padding: 14px 32px;border-radius: 6px; font-size:16px;" href="/">Go to home</a></h1>`,
     );
 });
 
@@ -40,7 +40,7 @@ app.post('/circle', (req, res) => {
     const { radius } = req.body;
     const area = 3.1416 * radius * radius;
     res.send(
-        `<h1 style="margin-top:50px; text-align:center;">Area of Circle: ${area}<br><a href="/">Go to home</a></h1>`
+        `<h1 style="margin-top:50px; text-align:center; font-family: arial;">Area of Circle: ${area}<br><br><br><a style="text-decoration:none; background: #f7941d; color: #ffffff; padding: 14px 32px;border-radius: 6px; font-size:16px;" href="/">Go to home</a></h1>`,
     );
 });
 
