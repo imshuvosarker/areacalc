@@ -30,14 +30,18 @@ app.post('/triangle', (req, res) => {
     const { height } = req.body;
     const { base } = req.body;
     const area = 0.5 * height * base;
-    res.send(`<h1>Area of Triangle: ${area}<br><a href="/">Go to home</a></h1>`);
+    res.send(
+        `<h1 style="margin-top:50px; text-align:center;">Area of Triangle: ${area}<br><a href="/">Go to home</a></h1>`
+    );
 });
 
 // Circle calculate route
 app.post('/circle', (req, res) => {
     const { radius } = req.body;
     const area = 3.1416 * radius * radius;
-    res.send(`<h1>Area of Circle: ${area}<br><a href="/">Go to home</a></h1>`);
+    res.send(
+        `<h1 style="margin-top:50px; text-align:center;">Area of Circle: ${area}<br><a href="/">Go to home</a></h1>`
+    );
 });
 
 app.listen(PORT, () => {
