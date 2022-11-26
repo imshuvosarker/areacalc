@@ -37,7 +37,7 @@ app.post('/triangle', (req, res) => {
 app.post('/circle', (req, res) => {
     const { radius } = req.body;
     const area = 3.1416 * radius * radius;
-    res.send(`<h1>Area of Circle: ${area}</h1><br><a href="/">Go to home</a></h1>`);
+    res.send(`<h1>Area of Circle: ${area}<br><a href="/">Go to home</a></h1>`);
 });
 
 app.listen(PORT, () => {
