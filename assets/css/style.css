@@ -94,6 +94,8 @@ p {
 }
 .btn-next {
     background-color: #232425;
+    margin-left: 15px;
+    box-shadow: none;
 }
 .btn:hover {
     background: var(--primary-dark);
