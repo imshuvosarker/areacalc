@@ -1,0 +1,157 @@
+/* Google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/*
+====================
+    Default Css
+====================
+*/
+:root {
+    --primary: #f7941d;
+    --primary-dark: #d26d09;
+    --dark: #232425;
+    --gray: #565758;
+    --pure: #ffffff;
+    --light: #f7f8f9;
+    --font: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
+    color: var(--dark);
+}
+
+p {
+    font-weight: 400;
+    line-height: 1.7em;
+    color: var(--gray);
+}
+
+.flex {
+    display: flex;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.item-center {
+    align-items: center;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.active {
+    color: var(--primary);
+}
+
+.btn {
+    padding: 14px 32px;
+    outline: none;
+    border: none;
+    background: var(--primary);
+    display: inline-block;
+    border-radius: 6px;
+    cursor: pointer;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    color: var(--pure);
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 18px;
+    box-shadow: 0 20px 40px -20px var(--primary);
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+.btn:hover {
+    background: var(--primary-dark);
+}
+
+.input-control {
+    padding: 14px;
+    border-radius: 6px;
+    border: 1px solid #d9d9da;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+::placeholder {
+    font-family: var(--font);
+    font-size: 16px;
+}
+
+/*
+====================
+    Heading Css
+====================
+*/
+.header {
+    box-shadow: 0 0 30px 0 #00000012;
+    padding: 15px 0;
+}
+
+.header .left .logo {
+    width: 200px;
+}
+
+.main-menu ul {
+    list-style: none;
+}
+.main-menu ul li a {
+    padding: 10px 20px;
+    display: block;
+    text-decoration: none;
+    font-weight: 18px;
+    font-weight: 600;
+}
+
+/*
+====================
+    Hero Css
+====================
+*/
+.hero-content {
+    padding: 100px 0;
+    text-align: center;
+}
+.hero-content h1 {
+    font-size: 65px;
+    margin-bottom: 10px;
+}
+.hero-content p {
+    width: 80%;
+    margin: auto;
+    display: block;
+    margin-bottom: 30px;
+}
